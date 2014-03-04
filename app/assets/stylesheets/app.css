@@ -1,4 +1,5 @@
 body {background: #f0f0f0;}
+.medium {font-size: 20px;}
 .white {border: 1px solid #fcfcfc;background: #fff;padding: 40px;}
 .margin_top {margin-top: 50px;}
 .margin_bottom {margin-bottom: 50px;}
@@ -6,7 +7,9 @@ body {background: #f0f0f0;}
 .center {margin: auto;text-align:center;}
 .width300 {width: 300px;}
 .grey {color: #666;font-weight: 100;}
-.orange {font-size: 20px;color: #ff9900;}
-.rounded {border-radius: 3px; border:1px solid #ddd;}
+.orange {color: #ff9900;}
+.rounded {box-shadow: 1px 1px 1px #ccc;border-radius: 3px; border:1px solid #ddd;}
 .left {margin: auto;text-align:left;}
 .lightgrey {color: #bbb!important;}
+
+a {text-decoration: none; color: #ff9900;}

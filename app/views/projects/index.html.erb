@@ -1,14 +1,14 @@
 </br></br>
 <h1 class="center"> List of the last projects </h1>
-<h4 class="grey center margin_bottom">This is a list of the last time trackers </h4>
+<h4 class="grey center mediummargin_bottom">This is a list of the last time trackers </h4>
 </br></br>
 <ul class="left rounded white listnone width300">
 	<% @projects.each do |project| %>
 	<% if project.description.blank? %>
-	<li class="orange left"><%= project.name %>
+	<li class="orange medium left"><%= link_to(project.name, project_path(project.id)) %>
 	<span class="lightgrey"> - No description </span></li>
 	<% else %>
-	<li class="orange"><%= project.name %><span class="grey"> -
+	<li class="orange medium"><%= link_to(project.name, project_path(project.id)) %><span class="grey"> -
 	<%= project.description %></span></li>
 	<% end %>
 	<% end %>
